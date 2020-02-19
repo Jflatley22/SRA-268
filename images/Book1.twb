@@ -1,0 +1,898 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook original-version='18.1' source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='NCAAMarchMadnessMascots' inline='true' name='federated.1ucbxjb0ofzqk815mfhrq0y5xgem' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='NCAAMarchMadnessMascots' name='textscan.1uxf1xq0ncwby21daw50i0m5rufs'>
+            <connection class='textscan' directory='C:/Users/Jonathan PSU/Desktop' filename='NCAAMarchMadnessMascots.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1uxf1xq0ncwby21daw50i0m5rufs' name='NCAAMarchMadnessMascots.txt' table='[NCAAMarchMadnessMascots#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='row_id' ordinal='0' />
+            <column datatype='integer' name='season' ordinal='1' />
+            <column datatype='integer' name='round' ordinal='2' />
+            <column datatype='datetime' name='game_date' ordinal='3' />
+            <column datatype='string' name='day' ordinal='4' />
+            <column datatype='integer' name='win_seed' ordinal='5' />
+            <column datatype='string' name='win_region' ordinal='6' />
+            <column datatype='integer' name='win_pts' ordinal='7' />
+            <column datatype='integer' name='lose_seed' ordinal='8' />
+            <column datatype='string' name='lose_region' ordinal='9' />
+            <column datatype='integer' name='lose_pts' ordinal='10' />
+            <column datatype='integer' name='num_ot' ordinal='11' />
+            <column datatype='integer' name='academic_year' ordinal='12' />
+            <column datatype='string' name='winning_market' ordinal='13' />
+            <column datatype='string' name='winning_name' ordinal='14' />
+            <column datatype='string' name='winning_mascot' ordinal='15' />
+            <column datatype='string' name='winning_mascot_name' ordinal='16' />
+            <column datatype='string' name='winning_mascot_common_name' ordinal='17' />
+            <column datatype='string' name='winning_tax_subspecies' ordinal='18' />
+            <column datatype='string' name='winning_tax_species' ordinal='19' />
+            <column datatype='string' name='winning_tax_genus' ordinal='20' />
+            <column datatype='string' name='winning_tax_family' ordinal='21' />
+            <column datatype='string' name='winning_tax_order' ordinal='22' />
+            <column datatype='string' name='winning_tax_class' ordinal='23' />
+            <column datatype='string' name='winning_tax_phylum' ordinal='24' />
+            <column datatype='string' name='winning_tax_kingdom' ordinal='25' />
+            <column datatype='string' name='winning_tax_domain' ordinal='26' />
+            <column datatype='string' name='winning_non_tax_type' ordinal='27' />
+            <column datatype='string' name='losing_market' ordinal='28' />
+            <column datatype='string' name='losing_name' ordinal='29' />
+            <column datatype='string' name='losing_mascot' ordinal='30' />
+            <column datatype='string' name='losing_mascot_name' ordinal='31' />
+            <column datatype='string' name='losing_mascot_common_name' ordinal='32' />
+            <column datatype='string' name='losing_tax_subspecies' ordinal='33' />
+            <column datatype='string' name='losing_tax_species' ordinal='34' />
+            <column datatype='string' name='losing_tax_genus' ordinal='35' />
+            <column datatype='string' name='losing_tax_family' ordinal='36' />
+            <column datatype='string' name='losing_tax_order' ordinal='37' />
+            <column datatype='string' name='losing_tax_class' ordinal='38' />
+            <column datatype='string' name='losing_tax_phylum' ordinal='39' />
+            <column datatype='string' name='losing_tax_kingdom' ordinal='40' />
+            <column datatype='string' name='losing_tax_domain' ordinal='41' />
+            <column datatype='string' name='losing_non_tax_type' ordinal='42' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;&#9;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>row_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[row_id]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>row_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[round]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>round</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[game_date]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>game_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_seed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_seed]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>win_seed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[win_region]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>win_region</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_pts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_pts]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>win_pts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lose_seed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lose_seed]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>lose_seed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lose_region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lose_region]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>lose_region</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lose_pts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lose_pts]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>lose_pts</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_ot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_ot]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>num_ot</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>academic_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[academic_year]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>academic_year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_market]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_market</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_name]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_mascot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_mascot]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_mascot</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_mascot_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_mascot_name]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_mascot_name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_mascot_common_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_mascot_common_name]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_mascot_common_name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_subspecies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_subspecies]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_subspecies</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_species]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_species</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_genus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_genus]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_genus</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_family]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_family</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_order</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_order]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_order</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_class]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_class</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_phylum</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_phylum]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_phylum</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_kingdom</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_kingdom]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_kingdom</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_tax_domain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_tax_domain]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_tax_domain</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_non_tax_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_non_tax_type]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>winning_non_tax_type</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_market]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_market</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_name]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_name</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_mascot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_mascot]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_mascot</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_mascot_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_mascot_name]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_mascot_name</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_mascot_common_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_mascot_common_name]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_mascot_common_name</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_subspecies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_subspecies]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_subspecies</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_species]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_species</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_genus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_genus]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_genus</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_family]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_family</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_order</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_order]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_order</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_class]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_class</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_phylum</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_phylum]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_phylum</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_kingdom</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_kingdom]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_kingdom</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_tax_domain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_tax_domain]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_tax_domain</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_non_tax_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_non_tax_type]</local-name>
+            <parent-name>[NCAAMarchMadnessMascots.txt]</parent-name>
+            <remote-alias>losing_non_tax_type</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.683967' measure-ordering='alphabetic' measure-percentage='0.316033' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Winning Seed and Their Total Winning Points&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NCAAMarchMadnessMascots' name='federated.1ucbxjb0ofzqk815mfhrq0y5xgem' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ucbxjb0ofzqk815mfhrq0y5xgem'>
+            <column-instance column='[win_seed]' derivation='None' name='[none:win_seed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[win_pts]' derivation='Sum' name='[sum:win_pts:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[win_pts]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[win_seed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[sum:win_pts:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[sum:win_pts:qk]</rows>
+        <cols>[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[none:win_seed:qk]</cols>
+      </table>
+      <simple-id uuid='{7FA8A592-4EAB-4315-8E8D-57D9474D16F0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{90145102-10BC-4000-B582-9E81DCD7E4B7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[sum:win_pts:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[cnt:win_seed:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[cnt:win_pts:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[cnt:win_pts:qk]</field>
+                  <field>[federated.1ucbxjb0ofzqk815mfhrq0y5xgem].[cnt:win_seed:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2117</value>
+                <value>2117</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{0510F550-7CFF-4334-B456-4A5D52765889}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E0144900-815F-4D79-BFC2-2E56BDACBCE7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
